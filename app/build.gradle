@@ -30,6 +30,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures{
+        viewBinding true    
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -84,5 +88,11 @@ dependencies {
 //hilt
     implementation("com.google.dagger:hilt-android:2.44")
     kapt("com.google.dagger:hilt-android-compiler:2.44")
+
+    //Spinkit View
+
+//    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+//    implementation 'com.github.ibrahimsn98:CirclesLoadingView:x'
+//    implementation 'com.github.ibrahimsn98:CirclesLoadingView:1.0'
 
 }
